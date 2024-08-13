@@ -5,21 +5,26 @@ import './Home.css';
 
 const Home = () => {
     useEffect(() => {
-        gsap.fromTo(".heading", 
-          { y: '100vh', scale: 3, opacity: 0 }, // Start from below the screen with a large size
-          { y: '0', scale: 1, opacity: 1, duration: 2, ease: 'power3.out' } // End at the center with original size and easing
-        );
-      }, []);
-    
-      return (
-        <div>
-          <Navbar />
-          <header className="header">
-            <h1 className="heading">Dear Zindagi</h1>
-          </header>
-        </div>
-      );
+      const tl = gsap.timeline();
   
-};
-
-export default Home;
+      // Initial animation: appears from below and settles at the center
+      tl.fromTo(".heading", 
+        { y: '100vh', opacity: 0, scale: 2 }, // Start from below the screen with a larger size
+        { y: '0', opacity: 1, scale: 1, duration: 2, ease: 'power3.inOut' } // Move to center and scale to original size
+      )
+      .to(".heading", 
+        { y: '-20px', duration: 1, repeat: -1, yoyo: true, ease: 'sine.inOut' } // Floating effect
+      );
+    }, []);
+  
+    return (
+      <div>
+        <Navbar />
+        <header className="header">
+          <h1 className="heading">Dear Zindagi</h1>
+        </header>
+      </div>
+    );
+  };
+  
+  export default Home;
