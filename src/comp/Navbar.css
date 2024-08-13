@@ -1,130 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
-/* Navbar container
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #7a4d7c;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 1rem;
-    z-index: 10;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 10px 22px 40px #372738;
-    ;
-  }
-  
-  .logo {
-    color: #F7EFE5;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    padding-left: 3rem;
-    font-family: 'Dancing Script', cursive; 
-  }
-  
-  .nav-links {
-    list-style: none;
-    width: 100%;
-  }
-  
-  .nav-links li {
-    margin: 1rem 0;
-  }
-  
-  .nav-links a {
-    color: #FFFBF5;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-    font-size: 1.2rem;
-  }
-  
-  .burger {
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 21px;
-    z-index: 11;
-  }
-  
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #dd6b6b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 20;
-  }
-  
-  .overlay-links {
-    list-style: none;
-    text-align: center;
-  }
-  
-  .overlay-links li {
-    margin: 2rem 0;
-  }
-  
-  .overlay-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  
-  .close-icon {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-    z-index: 21;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .navbar {
-      transform: translateX(-100%);
-    }
-  
-    .navbar.open {
-      transform: translateX(0);
-    }
-  
-    .burger {
-      display: flex;
-    }
-  
-    .nav-links {
-      display: none;
-    }
-  }
-   */
-
-   /* Base Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -144,7 +20,7 @@
   }
   
   .navbar.open {
-    transform: translateX(0); /* Make sure sidebar is visible */
+    transform: translateX(0);
   }
   
   .logo {
@@ -153,9 +29,7 @@
     margin-bottom: 2rem;
     padding-left: 3rem;
     font-family: 'Dancing Script', cursive; 
-    /* padding: 1rem;
-    font-size: 1.5rem;
-    font-family: 'Dancing Script', cursive;  */
+    
 
   }
   
@@ -178,46 +52,7 @@
     display: none;
   }
   
-  /* Burger Icon Styles */
-  /* .burger {
-    display: flex; 
-    margin-top: -3.5rem;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    cursor: pointer;
-    position: absolute;
-    right: -50px;
-    width: 20%; 
-    height: 10rem; 
-    z-index: 11;
-    top: 1rem;
-  }
-  
-  .line1, .line2, .line3 {
-    width: 7rem;
-    height: 1.5rem;
-    background: #fff;
-    margin: 0 0;
-    box-shadow: 10px 10px 42px rgb(8, 17, 15);
-
-  }
  
-  .line1{
-    background: #f7f7e9;
-    border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
-  }
-  .line2{
-    background: #d3dadd;
-    border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
-
-  }
-  .line3{
-    background: #babbb5;
-    border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
-
-
-  } */
   
   /* Mobile Styles */
   @media (max-width: 768px) {

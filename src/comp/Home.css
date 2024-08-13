@@ -1,15 +1,14 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 /* Styling for the container */
 .container {
     
-  height: 100vh; /* Ensures the container covers the full viewport height */
-  width: 100vw;  /* Ensures the container covers the full viewport width */
+  height: 100vh; 
+  width: 100vw; 
   background: linear-gradient(135deg, #b47ca6 ,#b47ca6, #E2BFD9 ,#C8A1E0); /* Linear gradient background */
-  display: flex; /* Ensures content within the container is centered */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 /* Styling for the header */
@@ -19,7 +18,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: transparent; /* Ensure background is transparent to show the container gradient */
+  background-color: transparent;
 }
 
 /* Styling for the animated heading */
@@ -28,7 +27,7 @@ padding-left: 15rem;
   font-size: 12rem;
   color: #674188;
   text-align: center;
-  font-family: 'Dancing Script', cursive; /* Apply the cursive font */
+  font-family: 'Dancing Script', cursive; 
 }
 
 /* Mobile and tablet styles */
@@ -36,6 +35,6 @@ padding-left: 15rem;
     
   .heading {
     padding-right: 16rem;
-    font-size: 7rem; /* Slightly smaller font size for smaller screens */
+    font-size: 7rem; 
   }
 }
