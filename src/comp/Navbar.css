@@ -5,7 +5,9 @@
     left: 0;
     width: 250px;
     height: 100%;
-    background-color: #da8585;
+    /* background-color: #987D9A; */
+    background-color: #7a4d7c;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -13,10 +15,12 @@
     padding: 1rem;
     z-index: 10;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 10px 22px 40px #372738;
+    ;
   }
   
   .logo {
-    color: white;
+    color: #F7EFE5;
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -31,7 +35,7 @@
   }
   
   .nav-links a {
-    color: white;
+    color: #FFFBF5;
     text-decoration: none;
     display: block;
     width: 100%;
