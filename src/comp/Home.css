@@ -3,6 +3,7 @@
 
 /* Styling for the container */
 .container {
+    
   height: 100vh; /* Ensures the container covers the full viewport height */
   width: 100vw;  /* Ensures the container covers the full viewport width */
   background: linear-gradient(135deg, #b47ca6 ,#b47ca6, #E2BFD9 ,#C8A1E0); /* Linear gradient background */
@@ -32,7 +33,9 @@ padding-left: 15rem;
 
 /* Mobile and tablet styles */
 @media screen and (max-width: 768px) {
+    
   .heading {
-    font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
+    padding-right: 16rem;
+    font-size: 7rem; /* Slightly smaller font size for smaller screens */
   }
 }

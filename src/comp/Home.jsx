@@ -23,7 +23,9 @@ const Home = () => {
       <div className='container'>
         <header className="header">
           <h1 className="heading">Dear Zindagi</h1>
+
         </header>
+
       </div>
     </div>
   );
