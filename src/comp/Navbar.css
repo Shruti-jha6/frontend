@@ -1,0 +1,120 @@
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .nav-links li {
+    margin: 1rem 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Burger menu */
+  .burger {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    z-index: 11;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  /* Fullscreen overlay for mobile */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+  }
+  
+  .overlay-links {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .overlay-links li {
+    margin: 2rem 0;
+  }
+  
+  .overlay-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  /* Close icon */
+  .close-icon {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 21;
+  }
+  
+  /* Mobile and tablet styles */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      transform: translateX(-100%);
+    }
+  
+    .navbar.open {
+      transform: translateX(0);
+    }
+  
+    .burger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  }
+  

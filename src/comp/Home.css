@@ -1,0 +1,30 @@
+/* Styling for the header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding-left: 250px; /* Offset for the sidebar in desktop mode */
+  }
+  
+  /* Styling for the animated heading */
+  .heading {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Mobile and tablet styles */
+  @media screen and (max-width: 768px) {
+    .header {
+      padding-left: 0; /* Remove the offset for mobile and tablet mode */
+    }
+  
+    .heading {
+      font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
+    }
+  }
+  
