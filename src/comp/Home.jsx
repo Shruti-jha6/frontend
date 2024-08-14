@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import Navbar from './Navbar'; // Corrected import path
 import './Home.css';
 import Header from './Header';
+import Quote from './Quote';
 
 const Home = () => {
   useEffect(() => {
@@ -31,7 +32,7 @@ const Home = () => {
 
       </div>
       <div className='container1'>
-        get your things done
+        <Quote/>
 
       </div>
 
