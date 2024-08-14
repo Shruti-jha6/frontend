@@ -2,14 +2,16 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import Navbar from './Navbar'; // Corrected import path
 import './Home.css';
+import Header from './Header';
 
 const Home = () => {
   useEffect(() => {
     const tl = gsap.timeline();
+    
 
     // Initial animation: appears from below and settles at the center
     tl.fromTo(".heading", 
-      { y: '100vh', opacity: 0, scale: 2 }, // Start from below the screen with a larger size
+      { y: '100%', opacity: 0, scale: 1.2 }, // Start from below the screen with a larger size
       { y: '0', opacity: 1, scale: 1, duration: 2, ease: 'power3.inOut' } // Move to center and scale to original size
     )
     .to(".heading", 
@@ -19,6 +21,7 @@ const Home = () => {
 
   return (
     <div>
+      <Header/>
       <Navbar />
       <div className='container'>
         <header className="header">
@@ -27,6 +30,11 @@ const Home = () => {
         </header>
 
       </div>
+      <div className='container1'>
+        get your things done
+
+      </div>
+
     </div>
   );
 };

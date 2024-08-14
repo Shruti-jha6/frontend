@@ -4,8 +4,17 @@
 .container {
     
   height: 100vh; 
-  width: 100vw; 
+  width: 100%; 
   background: linear-gradient(135deg, #b47ca6 ,#b47ca6, #E2BFD9 ,#C8A1E0); /* Linear gradient background */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.container1 {
+    
+  height: 100vh; 
+  width: 100%; 
+  background: linear-gradient(135deg,#C8A1E0,  #E2BFD9 ); 
   display: flex; 
   justify-content: center; 
   align-items: center; 
@@ -32,6 +41,12 @@ padding-left: 15rem;
 
 /* Mobile and tablet styles */
 @media screen and (max-width: 768px) {
+  .container{
+    width: 100%;
+  }
+  .container1{
+    width: 100%;
+  }
     
   .heading {
     padding-right: 16rem;

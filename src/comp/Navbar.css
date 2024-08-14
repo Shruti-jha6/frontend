@@ -59,6 +59,7 @@
     .navbar {
       width: 100%;
       height: 100%;
+
       transform: translateX(-100%); /* Initially hidden off-screen */
     }
   
@@ -83,10 +84,11 @@
       
       .line1, .line2, .line3 {
         width: 10rem;
-        height: 1.5rem;
+        height: 0.9rem;
         background: #fff;
         margin-bottom: 2px;
         box-shadow: 10px 10px 42px rgb(8, 17, 15);
+        z-index: 10;
     
       }
      
