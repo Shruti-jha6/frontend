@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import Navbar from './Navbar'; // Corrected import path
 import './Home.css';
 import Header from './Header';
-import Quote from './Quote';
+// import Quote from './Quote';
 
 const Home = () => {
   useEffect(() => {
@@ -26,15 +26,15 @@ const Home = () => {
       <Navbar />
       <div className='container'>
         <header className="header">
-          <h1 className="heading">Dear Zindagi</h1>
+          <h1 className="heading">ZenBloom</h1>
 
         </header>
 
       </div>
-      <div className='container1'>
+      {/* <div className='container1'>
         <Quote/>
 
-      </div>
+      </div> */}
 
     </div>
   );
